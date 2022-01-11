@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Handwritten Text Recognition System</title>
+	  <link rel = "icon" href ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKOifS4vPr50NEpkz-ATsYzAHHAJlEITMGGRtvS6AscmKZ1QP9mfA8yvFtkRM4CywMiCs&usqp=CAU"  type = "image/x-icon">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <style>
+      body
+      {
+      font-family: "Century Gothic";
+      }
+      /*just bg and body style*/
+      .container{
+      position: absolute;
+      top: 50%;
+      width:60%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid darkmagenta;
+      background-color:darkcyan;
+      padding:20px;
+      border-radius:5px;
+      }
+      .center{
+      text-align:center;
+      }
+      #top{
+      margin-top:20px;
+      }
+      .btn-container{
+      background:beige;
+      text-align: center;
+      border-radius:5px;
+      padding-bottom:20px;
+      margin-bottom:20px;
+      }
+      .white{
+      color:white;
+      }
+      .imgupload{
+      color:#1E2832;
+      padding-top:40px;
+      font-size:7em;
+      margin-bottom: 15px;
+      }
+      #namefile{
+      color:black;
+      margin-bottom: 33px;
+      }
+      h4>strong{
+      color:darkmagenta;
+      }
+      .btn-primary{
+      border-color: darkmagenta !important;
+      }
+      /*this sets the actual file input to overlay our button*/
+      #fileup{
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+      width:200px;
+      cursor: grab;
+      position:absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 40px;
+      height: 50px;
+      color: purple;
+      margin-bottom: 10px;
+      }
+      #button{
+      padding:5px 50px;
+      border-color: purple !important;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      background-color: darkmagenta !important;
+      }
+      #sign{
+      color:#1E2832;
+      position:fixed;
+      right:10px;
+      bottom:10px;
+      text-shadow:0px 0px 0px #1E2832;
+      transition:all.3s;
+      }
+      img {
+      width: 600px;
+      height:110px;
+      object-fit: contain;
+      padding:auto;
+      }
+      #sign:hover{
+      color:#1E2832;
+      text-shadow:0px 0px 5px #1E2832;
+      }
+   </style>
+   <body>
+      <div class="container center">
+         <div class="row">
+            <div class="col-md-12">
+               <h1 class="white">Handwritten Text Recognition System</h1>
+               <p class="white">Predicted Text from your Picture</p>
+            </div>
+         </div>
+         <form name="upload" id="form" method="post" action="#" enctype="multipart/form-data" accept-charset="utf-8">
+            <div class="row">
+               <div class="col-md-6 col-md-offset-3 center">
+                  <div class="btn-container">
+                     <img src="static/img/word.png" alt="handwritten text prediction">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <h3 class="white" style="font-style:italic">{{myresult}}</h3>
+               </div>
+            </div>
+         </form>
+      </div>
+      <a target="_blank" id="sign">Sundas & Asma</a>
+   </body>
+</html>
