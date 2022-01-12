@@ -9,5 +9,4 @@ We have used a NN for our task. It contained convolutional NN (CNN) layers, recu
 ## How to Run?
 1)	Install all libraries from the reqirements.txt file.
 2)	Run the app.py file.
-3)	Open local host to view the project.
-
+3)	The Project's GUI will open.
