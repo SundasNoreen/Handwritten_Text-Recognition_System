@@ -1,4 +1,4 @@
-# Handwritten_Text-Recognition_System
+# Handwritten Text Recognition System
 
 Handwritten character recognition (HCR) is the detection of characters from images, documents
 and other sources and changes them in machine-readable shape for further processing. The
