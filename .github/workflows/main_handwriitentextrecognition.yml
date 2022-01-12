@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'HandwriitenTextRecognition'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17CC1736E2E942969F1610FCD8FE0F8B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10A3CD826A94445D8CF35BC0A5FD81BC }}
