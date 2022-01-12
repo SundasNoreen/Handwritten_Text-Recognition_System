@@ -3,7 +3,6 @@
 
 from flask import Flask, request, redirect, url_for,render_template
 import os
-from main import infermain
 
 UPLOAD_FOLDER = "static/img/"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
@@ -27,6 +26,7 @@ def home():
             return redirect(url_for("result"))
     return render_template('upload.html')
 
+from main import infermain
 
 @app.route('/result')
 def result():
